@@ -1,0 +1,152 @@
+/* The navigation must clearly display the current page within the nav element. */
+
+/* Each page should contain a main section that can be reached using a Jump to Content option with the first tab on the page.
+Main must be after the navigation. */
+
+/* One page with the images must have a component that uses grid */
+
+/* The grid layout must change in each of your three screen sizes using min-width media queries. */
+
+/* One page with the images must have a component that uses flexbox */
+
+/* The flex layout must change in each of your three screen sizes using min-width media queries. */
+
+/* Media queries for two additional layouts - tablet, and larger screen. 
+the flow of elements must change, elements must hide, and grid/flex properties should be altered.*/
+
+/* If you are using animation, you must include a prefers-reduced-motion media-query that turns it off. */
+
+body{
+  
+  margin: 0;
+  padding: 0;
+  font-size: 16pt;
+  background-color: white;
+  font-family: 'Courier New', Courier, Arial, 'Times New Roman', Times, serif;
+
+}
+
+header{
+
+  background-color: white;
+  color: black;
+  border-bottom: 3px solid goldenrod;
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+
+h1{
+
+  font-size: 2.5em;
+  text-align: center;
+  line-height: 2;
+
+}
+
+h2{
+
+  font-size: 2em;
+  text-align: center;
+  padding: 5px;
+
+}
+
+h3{
+
+  font-size: 1.75em;
+  text-align: center;
+  padding: 5px;
+
+}
+
+h4{
+
+  font-size: 1.5em;
+  text-align: center;
+  padding: 5px;
+
+}
+
+p {
+
+  padding: 0 30px;
+
+} 
+
+a.skip{
+
+  background: black;
+  color: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+
+}
+
+a.skip:focus{
+
+  background: black;
+  top:20px;
+  color: white;
+  text-decoration-style: solid;
+
+}
+
+*:focus{
+
+  border: 2px solid white;
+
+}
+
+.nav_item a{
+
+  padding: 10px;
+
+}
+
+a:link, a:visited{
+
+  color: black;
+
+}
+
+.nav_item a:hover, a:focus{
+
+  color: goldenrod;
+  text-decoration: underline;
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+
+}
+
+footer{
+
+  background-color: white;
+  border-top: 3px solid goldenrod;
+  color: black;
+  padding: 30px;
+  text-align: center;
+
+}
+
+
+.nav_links{
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 5px;
+
+}
+
