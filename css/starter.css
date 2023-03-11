@@ -46,6 +46,7 @@ h1{
   font-size: 2.5em;
   text-align: center;
   line-height: 2;
+  color: navy;
 
 }
 
@@ -150,9 +151,16 @@ footer{
 
 }
 
+#logo{
+
+  height: 100px;
+
+
+}
+
 .img{
 
-  width: 100%;
+  width: auto;
   margin: auto;
   
 }
