@@ -44,3 +44,91 @@
     background-color: silver;
     
 }
+
+
+
+
+.container{
+
+    width: 100%;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.profile-box{
+
+    background: goldenrod;
+    text-align: center;
+    padding: 40px 90px;
+    color: black;
+    position: relative;
+    border-radius: 20px;
+
+}
+
+.profile-pic{
+
+    width: 150px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 6px;
+    margin-top: 40px;
+
+}
+
+.profile-bottom{
+
+    background: black;
+    color: white;
+    padding: 60px 0;
+    margin-right: -90px;
+    margin-left: -90px;
+    margin-bottom: -40px;
+    border-radius: 20px;
+
+}
+
+#table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+#table tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+#table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+#table th:first-child, 
+#table td:first-child {
+    padding-left: 16px;
+}
+
+
+#table td, 
+#table th {
+    padding: 8px 8px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: top;
+}
+
+#table th {
+    font-weight: bold;
+    background-color: goldenrod;
+}
+ 
+#table {
+    font-size: 13px!important;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table;
+}
