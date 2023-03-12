@@ -1,23 +1,42 @@
-.message-box {
-    background: goldenrod;
-    text-align: center;
-    padding: 20px 20px;
-    color: black;
-    position: relative;
-    border-radius: 20px;
-    margin-bottom: 50px;
-    margin-left: 100px;
-    margin-right: 100px
+#table tr:nth-child(3n-1),
+#table tr:nth-child(3n-2),
+#table tr:nth-child(3n-3){
+    background-color: #fff;
+}
+#table tr:nth-child(6n),
+#table tr:nth-child(6n-1),
+#table tr:nth-child(6n-2){
+    background-color: #f1f1f1;
 }
 
-.message {
-    background: black;
-    text-align: center;
-    padding: 20px 20px;
-    color: white;
-    position: relative;
-    border-radius: 20px;
-    margin-bottom: 10px;
-    margin-left: 100px;
-    margin-right: 100px
+#table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+#table th:first-child, 
+#table td:first-child {
+    padding-left: 16px;
+}
+
+
+#table td, 
+#table th {
+    padding: 8px 8px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: top;
+}
+
+#table th {
+    font-weight: bold;
+    background-color: goldenrod;
+}
+ 
+#table {
+    font-size: 13px!important;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table;
 }
