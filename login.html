@@ -12,7 +12,15 @@
     <a class = "skip" href="#main">Skip to Main Content</a>
     <header>
         <img src="images/logo.png" alt="Website's Emblem" id = "logo">
-        <a class="nav_item"  href="index.html">Home</a>
+
+        <h2> Recruiter </h2>
+
+        <nav>
+            <div class="nav_links">
+                <a class="nav_item" href="index.html">Home</a>
+                <a class="nav_item" href="login.html">Log In</a>
+            </div>
+        </nav>
     </header>
 
     <main class="about" id="main">
@@ -26,12 +34,14 @@
             <label>Password : </label>   
             <input type="password" placeholder="Enter Password" name="password" required>  
             <div class="menu">
+                
+                    <input type="radio" name="profile_type" value="athlete" id="athlete">Athlete<BR>
+                    <input type="radio" name="profile_type" value="coach" id="coach">Coach<BR>
+                    <input type="radio" name="profile_type" value="GYM" id="gym">Training Facility<BR>
+
+                <!-- Need to create javascript that reads which option is selected for sign in-->
                 <button class="menu_button">Sign In</button>
-                <div class="menu-content">
-                    <a href="athlete.html">Athlete</a>
-                    <a href="coach.html">Coach</a>
-                    <a href="gym.html">Training Facility</a>
-                </div>
+
             </div>
             <input type="checkbox" checked="checked"> Remember me   
             <button type="button" class="cancelbtn"> Cancel</button>   
@@ -40,6 +50,7 @@
 
     </main>
 
+    <script src='js/login.js'></script>
 
 </body>
 </html>

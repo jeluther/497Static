@@ -13,11 +13,13 @@
     <a class = "skip" href="#main">Skip to Main Content</a>
     <header>
         <img src="images/logo.png" alt="Website Emblem" id = "logo">
+
+        <h2> Recruiter </h2>
+
         <nav>
             <div class="nav_links">
-                <a class="nav_item" href="index.html">Home</a>
-                <a class="nav_item" href="athlete.html">Profile</a>
-                <a class="nav_item" href="gym_search.html">Search for GYMs</a>
+                <a class="nav_item" href="athlete.html">Home</a>
+                <a class="nav_item" href="gym_search.html">Explore</a>
                 <a class="nav_item" href="athlete_messages.html">Messages</a>
                 <a class="nav_item" href="login.html">Log Out</a>
             </div>
@@ -28,37 +30,51 @@
 
         <!-- overview of existing Messages -->
 
-        <h1> Messages </h1>
+        <h3> Messages </h3>
 
-        <div class="message-box">
-            <h4> Kevin Ridley </h4>
-            <h5> University of Alabama </h5>
-            <h6> 2 Weeks Ago </h6>
-            <div class="message">
-                <p> Nice to meet you! </p>
-            </div>
-            <div class="message">
-                <p> I would like to invite you to our camp coming up in a month. </p>
-            </div>
-        </div>
+        <table id="table">
+            <thead>
+              <tr>
+                <th colspan="3">Message</th>
+                <th>Information</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="3" colspan="3">It was great having you to campus this past week. Look forward to staying in contact with you!</td>
+                <td>Tom Halpert</td>
+              </tr>
+              <tr>
+                <td>University of Michigan</td>
+              </tr>
+              <tr>
+                <td>2 Days Ago</td>
+              </tr>
 
-        <div class="message-box">
-            <h4> Tom Halpert </h4>
-            <h5> University of Michigan </h5>
-            <h6> 2 Days Ago </h6>
-            <div class="message">
-                <p> It was great having you to campus this past week. Look forward to staying in contact with you! </p>
-            </div>
-        </div>
+              <tr>
+                <td rowspan="3" colspan="3">Excited for you to ocme visit us in a couple of weeks.</td>
+                <td>Michael Bilingsley</td>
+              </tr>
+              <tr>
+                <td>University of Iowa</td>
+              </tr>
+              <tr>
+                <td>4 Days Ago</td>
+              </tr>
 
-        <div class="message-box">
-            <h4> Michael Bilingsley </h4>
-            <h5> University of Iowa </h5>
-            <h6> 4 Days Ago </h6>
-            <div class="message">
-                <p> Excited for you to ocme visit us in a couple of weeks. </p>
-            </div>
-        </div>
+              <tr>
+                <td rowspan="3" colspan="3">I would like to invite you to our camp coming up in a month.</td>
+                <td>Kevin Ridley</td>
+              </tr>
+              <tr>
+                <td>University of Alabama</td>
+              </tr>
+              <tr>
+                <td>2 Weeks Ago</td>
+              </tr>
+
+            </tbody>
+          </table>
 
     </main>
 
