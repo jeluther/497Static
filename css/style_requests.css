@@ -1,0 +1,39 @@
+#table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+#table tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+#table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+#table th:first-child, 
+#table td:first-child {
+    padding-left: 16px;
+}
+
+
+#table td, 
+#table th {
+    padding: 8px 8px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: top;
+}
+
+#table th {
+    font-weight: bold;
+    background-color: goldenrod;
+}
+ 
+#table {
+    font-size: 13px!important;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table;
+}
