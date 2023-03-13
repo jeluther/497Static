@@ -10,6 +10,18 @@
     background-color: #f1f1f1;
 }
 
+.sent{
+
+    background-color: lightskyblue;
+
+}
+
+.received{
+
+    background-color: lightgray;
+
+}
+
 #table tr {
     border-bottom: 1px solid #ddd;
 }

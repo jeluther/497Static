@@ -12,26 +12,6 @@ document.querySelector("#reset").addEventListener("click", function() {
 
 });
 
-// Mike Wesley
-document.querySelector("#Mike_Wesley").addEventListener("click", function() {
-
-	if (document.querySelector("#Mike_Wesley_speed").style.display == "none" ||
-        document.querySelector("#Mike_Wesley_strength").style.display == "none"){
-
-        document.querySelector("#Mike_Wesley_speed").style.display = "inline";
-        document.querySelector("#Mike_Wesley_strength").style.display = "inline";
-
-	}
-
-	else{
-
-        document.querySelector("#Mike_Wesley_speed").style.display = "none";
-        document.querySelector("#Mike_Wesley_strength").style.display = "none";
-
-	}
-
-});
-
 // Mike Wesley Speed and Agility
 document.querySelector("#Mike_Wesley_SA").addEventListener("click", function() {
 
@@ -66,26 +46,6 @@ document.querySelector("#Mike_Wesley_SP").addEventListener("click", function() {
 
 });
 
-// Denton Green
-document.querySelector("#Denton_Green").addEventListener("click", function() {
-
-	if (document.querySelector("#Denton_Green_speed").style.display == "none" ||
-        document.querySelector("#Denton_Green_strength").style.display == "none"){
-
-        document.querySelector("#Denton_Green_speed").style.display = "inline";
-        document.querySelector("#Denton_Green_strength").style.display = "inline";
-
-	}
-
-	else{
-
-        document.querySelector("#Denton_Green_speed").style.display = "none";
-        document.querySelector("#Denton_Green_strength").style.display = "none";
-
-	}
-
-});
-
 // Denton Green Speed and Agility
 document.querySelector("#Denton_Green_SA").addEventListener("click", function() {
 
@@ -115,27 +75,6 @@ document.querySelector("#Denton_Green_SP").addEventListener("click", function() 
 	else{
 
         document.querySelector("#Denton_Green_strength").style.display = "none";
-
-	}
-
-});
-
-
-// Ryan Smith
-document.querySelector("#Ryan_Smith").addEventListener("click", function() {
-
-	if (document.querySelector("#Ryan_Smith_speed").style.display == "none" ||
-        document.querySelector("#Ryan_Smith_strength").style.display == "none" ){
-
-        document.querySelector("#Ryan_Smith_speed").style.display = "inline";
-        document.querySelector("#Ryan_Smith_strength").style.display = "inline";
-
-	}
-
-	else{
-
-        document.querySelector("#Ryan_Smith_speed").style.display = "none";
-        document.querySelector("#Ryan_Smith_strength").style.display = "none";
 
 	}
 
@@ -226,5 +165,14 @@ document.querySelector("#Brent_Gioletti_SP").addEventListener("click", function(
         document.querySelector("#Brent_Gioletti_strength").style.display = "none";
 
 	}
+
+});
+
+
+document.querySelector("#corner").addEventListener("click", function() {
+	
+	document.querySelector("#results").style.display = "Block";
+	document.querySelector("#position").innerHTML = "Results: CB";
+
 
 });

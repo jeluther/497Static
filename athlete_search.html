@@ -29,23 +29,39 @@
     <main id="main">
 
         <div>
-
-            <!-- Position -->
-            <div> 
-                <h3> Position </h3>
-                <p> DB </p>
+            <div class="menu">
+                <button class="menu_button">Position</button>
+                <div class="menu-content">
+                    <button>QB</button>
+                    <button>RB</button>
+                    <button>WR</button>
+                    <button>TE</button>
+                    <button>OT</button>
+                    <button>OG</button>
+                    <button>OC</button>
+                    <button>DT</button>
+                    <button>DE</button>
+                    <button>OLB</button>
+                    <button>MLB</button>
+                    <button id="corner">CB</button>
+                    <button>S</button>
+                    <button>K</button>
+                    <button>P</button>
+                    <button>ATH</button>
+                </div>
             </div>
 
             <!-- Results -->
-            <h3> Results </h3>
+            <h3 id="position"> Results: </h3>
             <p> Click on each value to learn more!</p>
+
 
         </div>
 
-        <div style="display: flex; flex-direction: column;">
-            
-            <button class="reset-button" id = "reset">Reset Information Display</button>
+        <button id = "reset">Reset Information Display</button>
 
+        <div id="results">
+            
             <div class="container">
                 <div class="profile-box">
                     <img src="images/Athletes/Mike_Wesley.jpg" alt="Website's Emblem" class="profile-pic">
@@ -55,26 +71,191 @@
                     <!-- Link to new message -->
                     <div class="profile-bottom">
                         <p> 6'3" </p>
-                        <p> 220 LB </p>
-
-                        <button id = "Mike_Wesley">
-                            <p> Overall: 3.98 </p>
-                        </button>
-        
+                        <p> 220 CB </p>
+       
                         <button id = "Mike_Wesley_SA"> 
-                            <p> Speed and Agility: 4.23 </p>
+                            <p> Speed and Agility</p>
                         </button>
         
                         <div id="Mike_Wesley_speed">
-                            <p> Speed Info</p>
+                            
+                            <table id="table">
+
+                                <tr id="table_headings"> 
+                                    <th> Test </th>
+                                    <th> Measurement </th>
+                                    <th> Verified </th>
+                                </tr>
+                    
+                                <tr id="plyo">
+                                    <td> Reactive Plyo Stairs (sec) </td>
+                                    <td> 2.78 </td>
+                                    <td> </td>
+                                </tr>
+                    
+                                <tr id="three">
+                                    <td> 3-Cone (sec) </td>
+                                    <td> 7:08 </td>
+                                    <td> </td>
+                                </tr>
+                    
+                                <tr id="twenty">
+                                    <td> 20yd Shuttle (sec) </td>
+                                    <td> 4.14 </td>
+                                    <td> </td>
+                                </tr>
+                    
+                                <tr id="fourty">
+                                    <td> 40yd Dash (sec) </td>
+                                    <td> 4.58 </td>
+                                    <td> </td>
+                                </tr>
+                    
+                                <tr id="sixty">
+                                    <td> 60yd Shuttle (sec) </td>
+                                    <td> 11.53 </td>
+                                    <td> </td>
+                                </tr>
+                    
+                            </table>
                         </div>
         
                         <button id = "Mike_Wesley_SP"> 
-                            <p> Strength and Power: 3.73 </p>
+                            <p> Strength and Power</p>
                         </button>
         
                         <div id="Mike_Wesley_strength">
-                            <p> Strength Info</p>
+
+                            <table id="table">
+
+                                <tr id="table_headings"> 
+                                    <th> Test </th>
+                                    <th> Measurement </th>
+                                    <th> Verified </th>
+                                </tr>
+                    
+                                <tr id="height">
+                                    <td> Height (in)</td>
+                                    <td> 72 </td>
+                                    <td> <a href="???" target="_blank" data-lightbox="gyms" data-title="Training Facility that Verified">&#x2713</a> </td>
+                                </tr>
+                    
+                                <tr id="weight">
+                                    <td> Weight (LB) </td>
+                                    <td> 193 </td>
+                                    <td> </td>
+                                </tr>
+                    
+                                <tr id="wingspan">
+                                    <td> Wingspan (in) </td>
+                                    <td> 76 </td>
+                                    <td> <a href="???" target="_blank" data-lightbox="gyms" data-title="Training Facility that Verified">&#x2713</a> </td>
+                                </tr>
+                    
+                                <tr id="flexion">
+                                    <td> Neck Flexion (N) </td>
+                                    <td> 276 </td>
+                                    <td> </td>
+                                </tr>
+                    
+                                <tr id="extension">
+                                    <td> Neck Extension (N) </td>
+                                    <td> 250 </td>
+                                    <td> </td>
+                                </tr>
+                    
+                                <tr id="turkish">
+                                    <td> Turkish Get Up (LB) </td>
+                                    <td> 65 </td>
+                                    <td> <a href="???" target="_blank" data-lightbox="gyms" data-title="Training Facility that Verified">&#x2713</a> </td>
+                                </tr>
+                    
+                                <tr id="combo">
+                                    <td> Combo Twist (LB) </td>
+                                    <td> 380 </td>
+                                    <td> <a href="???" target="_blank" data-lightbox="gyms" data-title="Training Facility that Verified">&#x2713</a> </td>
+                                </tr>
+                    
+                                <tr id="SApulldown">
+                                    <td> 115 SA Pulldown (Reps) </td>
+                                    <td> 6 </td>
+                                    <td> <a href="???" target="_blank" data-lightbox="gyms" data-title="Training Facility that Verified">&#x2713</a> </td>
+                                </tr>
+                    
+                                <tr id="OGpulldown">
+                                    <td> 225 OG Pulldown (Reps) </td>
+                                    <td> 8 </td>
+                                    <td> </td>
+                                </tr>
+                    
+                                <tr id="OHchins">
+                                    <td> Bodyweight OH Chins (Reps) </td>
+                                    <td> 12 </td>
+                                    <td> </td>
+                                </tr>
+                    
+                                <tr id="SAbench">
+                                    <td> 115 SA Bench (Reps) </td>
+                                    <td> 7 </td>
+                                    <td> </td>
+                                </tr>
+                    
+                                <tr id="bench">
+                                    <td> 225 Bench (Reps) </td>
+                                    <td> 15 </td>
+                                    <td> <a href="???" target="_blank" data-lightbox="gyms" data-title="Training Facility that Verified">&#x2713</a> </td>
+                                </tr>
+                    
+                                <tr id="benchSS">
+                                    <td> 225 Bench w S.S. (Reps) </td>
+                                    <td> 19 </td>
+                                    <td> <a href="???" target="_blank" data-lightbox="gyms" data-title="Training Facility that Verified">&#x2713</a> </td>
+                                </tr>
+                    
+                                <tr id="adduction">
+                                    <td> Hip Adduction (N) </td>
+                                    <td> 472 </td>
+                                    <td> <a href="???" target="_blank" data-lightbox="gyms" data-title="Training Facility that Verified">&#x2713</a> </td>
+                                </tr>
+                    
+                                <tr id="abduction">
+                                    <td> Hip Abduction (N) </td>
+                                    <td> 418 </td>
+                                    <td> </td>
+                                </tr>
+                    
+                                <tr id="RFE">
+                                    <td> RFE Split Squat (LB) </td>
+                                    <td> 225 </td>
+                                    <td> <a href="???" target="_blank" data-lightbox="gyms" data-title="Training Facility that Verified">&#x2713</a> </td>
+                                </tr>
+                    
+                                <tr id="hamstring">
+                                    <td> Eccentric Hamstring (N) </td>
+                                    <td> 355 </td>
+                                    <td> </td>
+                                </tr>
+                    
+                                <tr id="slackblock">
+                                    <td> Slackblock Control (Reps) </td>
+                                    <td> 3 </td>
+                                    <td> <a href="???" target="_blank" data-lightbox="gyms" data-title="Training Facility that Verified">&#x2713</a> </td>
+                                </tr>
+                    
+                                <tr id="broad">
+                                    <td> Broad Jump (in) </td>
+                                    <td> 102 </td>
+                                    <td> </td>
+                                </tr>
+                    
+                                <tr id="vertical">
+                                    <td> Vertical Jump (in) </td>
+                                    <td> 34.5 </td>
+                                    <td> <a href="???" target="_blank" data-lightbox="gyms" data-title="Training Facility that Verified">&#x2713</a> </td>
+                                </tr>
+
+                            </table>
+
                         </div>
 
                     </div>
@@ -90,14 +271,10 @@
                     <!-- Link to new message -->
                     <div class="profile-bottom">
                         <p> 6'1" </p>
-                        <p> 185 LB </p>
-
-                        <button id = "Denton_Green">
-                            <p> Overall: 3.67 </p>
-                        </button>
+                        <p> 185 CB </p>
         
                         <button id = "Denton_Green_SA">
-                            <p> Speed and Agility: 4.36 </p>
+                            <p> Speed and Agility</p>
                         </button>
         
                         <div id="Denton_Green_speed">
@@ -105,7 +282,7 @@
                         </div>
         
                         <button id = "Denton_Green_SP">
-                            <p> Strength and Power: 2.98 </p>
+                            <p> Strength and Power</p>
                         </button>
         
                         <div id="Denton_Green_strength">
@@ -125,14 +302,10 @@
                     <!-- Link to new message -->
                     <div class="profile-bottom">
                         <p> 5'10" </p>
-                        <p> 180 LB </p>
-
-                        <button id = "Ryan_Smith">
-                            <p> Overall: 3.85 </p>
-                        </button>
-        
+                        <p> 180 CB </p>
+       
                         <button id = "Ryan_Smith_SA"> 
-                            <p> Speed and Agility: 4.43 </p>
+                            <p>Speed and Agility</p>
                         </button>
         
                         <div id="Ryan_Smith_speed">
@@ -140,7 +313,7 @@
                         </div>
         
                         <button id = "Ryan_Smith_SP">
-                            <p> Strength and Power: 3.27 </p>
+                            <p> Strength and Power</p>
                         </button>
         
                         <div id="Ryan_Smith_strength">
@@ -160,15 +333,10 @@
                     <!-- Link to new message -->
                     <div class="profile-bottom">
                         <p> 6'0" </p>
-                        <p> 200 LB </p>
-
-                        <button id = "Brent_Gioletti">
-                            <p> Overall: 3.87 </p>
-                        </button>
+                        <p> 200 CB </p>
         
                         <button id = "Brent_Gioletti_SA">
-                            
-                            <p> Speed and Agility: 3.48 </p>
+                            <p>Speed and Agility</p>
                         </button>
                         
                         <div id="Brent_Gioletti_speed">
@@ -176,7 +344,7 @@
                         </div>
         
                         <button id = "Brent_Gioletti_SP">
-                            <p> Strength and Power: 4.26 </p>
+                            <p>Strength and Power</p>
                         </button>
         
                         <div id="Brent_Gioletti_strength">
@@ -187,11 +355,11 @@
                 </div>
             </div>
 
-            <script src="js/athlete_search.js"></script>
-
         </div>
 
     </main>
+
+    <script src="js/athlete_search.js"></script>
 
 </body>
 </html>

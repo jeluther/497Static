@@ -1,3 +1,13 @@
+#results{
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    margin: auto;
+
+}
+
 .container{
 
     width: 100%;
@@ -66,5 +76,61 @@ button:hover {
 .reset-button {
     display: block;
     align-self: center;
+
+}
+.menu{
+    position: relative;
+    display: inline-block;
+
+}
+
+.menu-content{
+
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+}
+
+.menu-content button{
+
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+}
+
+.menu-content button:hover{
+
+    background-color: gray;
+    text-decoration: underline;
+
+}
+
+.menu:hover .menu-content{
+
+    display: block;
+
+}
+
+.menu:hover .menu_button{
+
+    background-color: silver;
+    
+}
+
+/* #results{
+
+    display: None;
+
+} */
+
+.profile-bottom > div{
+
+    display: None;
 
 }
