@@ -114,26 +114,6 @@ document.querySelector("#Ryan_Smith_SP").addEventListener("click", function() {
 
 });
 
-// Brent Gioletti
-document.querySelector("#Brent_Gioletti").addEventListener("click", function() {
-
-	if (document.querySelector("#Brent_Gioletti_speed").style.display == "none" ||
-        document.querySelector("#Brent_Gioletti_strength").style.display == "none"){
-
-        document.querySelector("#Brent_Gioletti_speed").style.display = "inline";
-        document.querySelector("#Brent_Gioletti_strength").style.display = "inline";
-
-	}
-
-	else{
-
-        document.querySelector("#Brent_Gioletti_speed").style.display = "none";
-        document.querySelector("#Brent_Gioletti_strength").style.display = "none";
-
-	}
-
-});
-
 // Brent Gioletti Speed and Agility
 document.querySelector("#Brent_Gioletti_SA").addEventListener("click", function() {
 
