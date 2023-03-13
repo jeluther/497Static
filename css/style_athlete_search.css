@@ -12,6 +12,8 @@
 
 .profile-box{
 
+    margin: 20px;
+    width: 30%;
     background: gold;
     text-align: center;
     padding: 40px 90px;
@@ -33,6 +35,9 @@
 
 .profile-bottom{
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: black;
     color: white;
     padding: 60px 0;
@@ -40,5 +45,26 @@
     margin-left: -90px;
     margin-bottom: -40px;
     border-radius: 20px;
+
+}
+
+button {   
+    background-color: lightgray;  
+    color: black;   
+    padding: 10px;   
+    margin: 10px 0px;   
+    border: none;   
+    cursor: pointer;
+    border: 3px solid gray;
+    border-radius: 10px;
+}  
+
+button:hover {
+    opacity: 70%;
+}
+
+.reset-button {
+    display: block;
+    align-self: center;
 
 }
