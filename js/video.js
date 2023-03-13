@@ -9,125 +9,151 @@ var video;
 window.addEventListener("load", function() {
 
 	console.log("Good job opening the window");
-	video = document.querySelector("#player1");
-	// video.autoPlay = false;
-	video.loop = false;
+	video_turkish = document.querySelector("#player_turkish");
+	video_turkish.loop = false;
+
+	video_combo_twist = document.querySelector("#player_turkish");
+	video_combo_twist.loop = false;
+
+	video_pullup = document.querySelector("#player_turkish");
+	video_pullup.loop = false;
 
 });
 
 // Play Button
-document.querySelector("#play").addEventListener("click", function() {
+document.querySelector("#play_turkish").addEventListener("click", function() {
 
 	console.log("Play Video");
-	video = document.querySelector("#player1");
-	if (video.paused == true){
-		video.play();
-		video.volume = document.querySelector("#slider").value / 100;
-		document.querySelector("#volume").innerHTML= (document.querySelector("#slider").value + "%");
-		document.querySelector("#play").innerHTML="Pause";
+	video_turkish = document.querySelector("#player_turkish");
+	if (video_turkish.paused == true){
+		video_turkish.play();
+		video_turkish.volume = 0;
+		document.querySelector("#play_turkish").innerHTML="Pause";
 	}
 
 	else{
 
 		console.log("Video paused");
-		video.pause();
-		document.querySelector("#play").innerHTML="Play";
+		video_turkish.pause();
+		document.querySelector("#play_turkish").innerHTML="Play";
 
 	}
 
 });
 
 // Skip Ahead
-document.querySelector("#skip_forward").addEventListener("click", function() {
-	video = document.querySelector("#player1");
-	if(video.currentTime + 2 > video.duration){
+document.querySelector("#skip_forward_turkish").addEventListener("click", function() {
+	video_turkish = document.querySelector("#player_turkish");
+	if(video_turkish.currentTime + 2 > video_turkish.duration){
 
-		video.currentTime = 0;
+		video_turkish.currentTime = 0;
 
 	}
 	
 	else{
 
-		video.currentTime = video.currentTime + 2;
+		video_turkish.currentTime = video_turkish.currentTime + 2;
 
 	}
 
-	console.log("The current location of the video: " + video.currentTime);
+	console.log("The current location of the video: " + video_turkish.currentTime);
 	
 });
 
 // Skip Back
-document.querySelector("#skip_backward").addEventListener("click", function() {
-	video = document.querySelector("#player1");
-	if(video.currentTime - 2 < 0){
+document.querySelector("#skip_backward_turkish").addEventListener("click", function() {
+	video_turkish = document.querySelector("#player_turkish");
+	if(video_turkish.currentTime - 2 < 0){
 
-		video.currentTime = 0;
+		video_turkish.currentTime = 0;
 
 	}
 	
 	else{
 
-		video.currentTime = video.currentTime - 2;
+		video_turkish.currentTime = video.currentTime - 2;
 
 	}
 
-	console.log("The current location of the video: " + video.currentTime);
+	console.log("The current location of the video: " + video_turkish.currentTime);
 
 });
 
 // Restart
-document.querySelector("#restart").addEventListener("click", function() {
-	video = document.querySelector("#player1");
-	video.currentTime = 0;
+document.querySelector("#restart_turkish").addEventListener("click", function() {
+	video_turkish = document.querySelector("#player_turkish");
+	video_turkish.currentTime = 0;
 
-	console.log("The current location of the video: " + video.currentTime);
+	console.log("The current location of the video: " + video_turkish.currentTime);
 	
 });
 
-// Mute	
-document.querySelector("#mute").addEventListener("click", function() {
-	video = document.querySelector("#player1");
-	if (!video.muted){
+// ////////////////////////////////////////////////////////
 
-		video.muted = true;
-		document.querySelector("#mute").innerHTML="Unmute";
-		console.log("Video is muted");
+// Play Button
+document.querySelector("#play_combo_twist").addEventListener("click", function() {
 
+	console.log("Play Video");
+	video_combo_twist = document.querySelector("#player_combo_twist");
+	if (video_combo_twist.paused == true){
+		video_combo_twist.play();
+		video_combo_twist.volume = 0;
+		document.querySelector("#play_combo_twist").innerHTML="Pause";
 	}
 
 	else{
 
-		video.muted = false;
-		document.querySelector("#mute").innerHTML="Mute";
-		console.log("Video is unmuted");
+		console.log("Video paused");
+		video_combo_twist.pause();
+		document.querySelector("#play_combo_twist").innerHTML="Play";
+
+	}
+
+});
+
+// Skip Ahead
+document.querySelector("#skip_forward_combo_twist").addEventListener("click", function() {
+	video_combo_twist = document.querySelector("#player_combo_twist");
+	if(video_combo_twist.currentTime + 2 > video_combo_twist.duration){
+
+		video_combo_twist.currentTime = 0;
 
 	}
 	
-});
+	else{
 
-// Volume Slider	-	Change the volume based on the slider and update the volume information.
-document.querySelector("#slider").addEventListener("click", function() {
-	video = document.querySelector("#player1");
-console.log("In the video query");
-console.log("Video volume is now " + document.querySelector("#slider").value + "%");
+		video_combo_twist.currentTime = video_combo_twist.currentTime + 2;
 
-video.volume = document.querySelector("#slider").value / 100;
-document.querySelector("#volume").innerHTML= (document.querySelector("#slider").value + "%");
+	}
+
+	console.log("The current location of the video: " + video_combo_twist.currentTime);
 	
 });
 
-// Styled			-	Utilize the existing oldSchool class on the video element
-document.querySelector("#vintage").addEventListener("click", function() {
-	video = document.querySelector("#player1");
-console.log("Video is now styled");
-video.classList.add("oldSchool");
+// Skip Back
+document.querySelector("#skip_backward_combo_twist").addEventListener("click", function() {
+	video_combo_twist = document.querySelector("#player_combo_twist");
+	if(video_combo_twist.currentTime - 2 < 0){
+
+		video_combo_twist.currentTime = 0;
+
+	}
 	
+	else{
+
+		video_combo_twist.currentTime = video_combo_twist.currentTime - 2;
+
+	}
+
+	console.log("The current location of the video: " + video_combo_twist.currentTime);
+
 });
 
-// Original			-	Remove the oldSchool class from the video.
-document.querySelector("#orig").addEventListener("click", function() {
-	video = document.querySelector("#player1");
-console.log("Video is now unstyled");
-video.classList.remove("oldSchool");
+// Restart
+document.querySelector("#restart_combo_twist").addEventListener("click", function() {
+	video_combo_twist = document.querySelector("#player_combo_twist");
+	video_combo_twist.currentTime = 0;
+
+	console.log("The current location of the video: " + video_combo_twist.currentTime);
 	
 });
